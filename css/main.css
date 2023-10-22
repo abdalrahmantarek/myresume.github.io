@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+    font-family: sans-serif;
+}
+/* Width and Color of the Scrollbar Track */
+::-webkit-scrollbar {
+    width: 10px; /* Adjust the width as needed */
+}
+
+/* Color of the Scrollbar Thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: #5e9693; /* Change to your desired color */
+    border-radius: 5px; /* Adjust the border-radius for a different shape */
+}
+
+/* Color of the Scrollbar Track when Hovered */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #4c7c77; /* Change to a different color on hover */
+}
+
+/* Color of the Scrollbar Track (background) */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Change to your desired background color */
+}
+
+/* Color of the Scrollbar Arrow Buttons (if available) */
+::-webkit-scrollbar-button {
+    background-color: #5e9693; /* Change to your desired color */
+}
+
+/* Width and Color of the Scrollbar Corner (between vertical and horizontal scrollbars) */
+::-webkit-scrollbar-corner {
+    background-color: #f1f1f1; /* Change to your desired color */
+}
+
+
+html {
+    scroll-behavior:smooth;
+}
+
+
+
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+
+
+nav ul li  a  {
+    color: white ;
+}
+nav {
+    background-color: rgb(255, 255, 255);
+}
+
+
+h1, h2 {
+    color: white;
+
+}
+
+#jobTitle {
+    min-height: 16vh;
+    color: whitesmoke;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 30vh;
+}
+
+h2 { font-size: 3rem; }
+
+.typing-animation {
+    animation: typing 3s linear infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@media (max-width : 850px) {
+    
+    #jobTitle {
+        color: whitesmoke;
+        font-family: Trebuchet MS;
+        font-weight: bold;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 30vh;
+    }
+    
+    
+}
+
+.portfolio-overlay {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: bottom 0.5s ease-in-out;
+}
+
+.show-portfolio {
+    bottom: 0;
+}
+
+.mydata {
+    color: white;
+    margin-top: 10vh ;
+    max-height: 100%;
+    overflow-y: auto;
+}
+.Portfolio {
+    font-size: 1.1rem;
+}
+.divStyle {
+    margin-bottom: 1em;
+    width: 50vb;
+    height: 40vb;
+    background-color: rgba(69,89,164,.5);
+    text-align: center;
+    padding-top: 10px;
+    transition-duration: 1s;    
+    
+}
+.divStyle:hover {
+    border: 2px solid  #5e9693;
+    outline:  #5e9693 solid 5px;
+    scale: .98;
+    .myinfo{
+        color: #5e9693;    
+    }
+}
+.myinfo{
+    padding-top: 10px;
+    }
+
+/* about me */
+.myphoto {
+    float: left;
+    max-width: 15vw;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.title {
+    
+    width: fit-content;
+    font-size:  6rem;
+    background: -webkit-linear-gradient(315deg,white 0%, #5e9693 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip:none ;
+    @media (max-width: 560px) {
+        font-size: 4rem;
+    }
+    }
+
+.paragraph {
+    font-size: 2rem;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    @media (max-width: 780px) {
+        font-size: 1.7rem;
+    }
+    @media (max-width: 560px) {
+        font-size: 1rem;
+    }
+}
+
+#separator {
+    height: 5vh;
+}
+
+/* my skils */
+.skils {
+    height: fit-content;
+    background-color: #f1f1f1;
+    color: slategray;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+dd {
+    font-size: large;
+}
+
